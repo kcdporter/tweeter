@@ -1,0 +1,86 @@
+.container {
+  display: block;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10px;
+  border:2px solid;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.new-tweet {
+  background: #eeeeee;
+  padding: 20px;
+}
+.new-tweet h2{
+  content: '';
+  border-bottom: 1px solid black;
+}
+
+.tweet h2 {
+  display: inline-block;
+  margin: 0;
+}
+.tweet p{
+  display: inline-block;
+}
+
+#tweetbox {
+  width: 100%;
+  font-weight: normal;
+}
+
+.counter {
+  font-weight: normal;
+  float: right;
+}
+
+.tweet {
+  background: #eee;
+  margin: 20px 0px;
+}
+
+#tweets-container .tweet {
+  width:100%;
+  border-radius: 10px;
+  border:2px solid;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding: 0;
+ }
+
+#tweets-container:hover{
+  opacity: 0.2;
+  transition: 0.3s; 
+}
+
+ #tweets-container header{
+  background-color: rgb(205, 205, 243);
+  width:100%;
+  border-radius: 10px 10px 0px 0px;
+ }
+ 
+ #tweets-container img {
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+ }
+
+ #tweets-container p{
+   display: inline;
+   
+ }
+ #tweets-container footer{
+  display: block;
+  text-align: left;
+}
+#tweets-container .icons{
+  text-align: right;
+  padding: 2px;
+  height: 50px;
+  width: 50px;
+}
