@@ -25,3 +25,11 @@
   font-weight: normal;
   float: right;
 }
+
+.warning {
+  color: yellow;
+}
+
+.limit-reached {
+  color: red;
+}
