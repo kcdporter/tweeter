@@ -8,6 +8,8 @@
   margin-right: 25%;
   border-radius: 10px;
   border:2px solid;
+  padding-top: 5px;
+  padding-bottom:5px;
 }
 
 .new-tweet h2{
