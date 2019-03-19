@@ -33,3 +33,22 @@
 .limit-reached {
   color: red;
 }
+
+#tweets-feed header{
+  background:#1e5c3a;
+  height:95px;
+}
+
+#tweets-feed .avatar{
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 15px;
+  border-radius: 10px;
+  border:2px solid;
+}
+
+#tweets-feed h2 {
+  margin-top: 0px;
+  padding-top: 25px;
+}

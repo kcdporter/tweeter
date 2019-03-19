@@ -17,5 +17,4 @@ $('.tweet-form').on('keyup', function(event) {
       counter.removeClass('limit-reached').addClass('warning');
     }
   }
-
 });
