@@ -1,6 +1,6 @@
 .container {
   box-sizing: border-box;
-  background: #99c5b238;
+  background: #20382b;
   display: block;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 100%;
@@ -12,7 +12,7 @@
 
 .new-tweet h2{
   margin: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #feffff;
 }
 
 .container .new-tweet .tweet-form{

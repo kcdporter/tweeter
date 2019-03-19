@@ -3,7 +3,7 @@
   height: 80px;
   width: 100%;
   padding:0px 32px;
-  background: #dde6e1;
+  background: no-repeat url("/images/fern.jpg");
   position: fixed;
   top: 0;
 }
