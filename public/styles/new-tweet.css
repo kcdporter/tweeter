@@ -31,36 +31,3 @@
 .limit-reached {
   color: red;
 }
-
-#tweets-feed article.tweet {
-  width: 450px;
-  margin: 0 auto;
-  border-radius: 10px;
-  border:2px solid;
-}
-
-#tweets-feed header{
-  background:#1e5c3a;
-  width: 100%;
-  border-radius: 10px 10px 0px 0px;
-  height:95px;
-}
-
-#tweets-feed .avatar{
-  float: left;
-  width: 90px;
-  height: 90px;
-  margin: 3px;
-  border-radius: 10px;
-  border:2px solid;
-}
-
-#tweets-feed h2 {
-  margin-top: 0px;
-  padding-top: 25px;
-  display: inline-block;
-}
-
-#tweets-feed h6 {
-  float: right;
-}

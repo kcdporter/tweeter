@@ -1,0 +1,63 @@
+#tweets-feed article.tweet {
+  opacity: .2;
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border:2px solid;
+}
+#tweets-feed article.tweet:hover {
+  opacity: 1;
+}
+
+#tweets-feed header{
+  background:#1e5c3a;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height:95px;
+}
+
+#tweets-feed .avatar{
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin: 3px;
+  border-radius: 10px;
+  border:2px solid;
+}
+
+#tweets-feed h2 {
+  margin-top: 0px;
+  padding-top: 25px;
+  display: inline-block;
+}
+
+#tweets-feed h6 {
+  float: right;
+  padding-right: 5px;
+}
+
+#tweets-feed p{
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#tweets-feed footer{
+  border-top: 1px solid #feffff;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+#tweets-feed footer div{
+  display: inline-block;
+  width: 40%;
+}
+#tweets-feed footer div.icons{
+  width: auto;
+  opacity: 0;
+}
+
+#tweets-feed article.tweet:hover div.icons{
+  opacity: 1;
+}
