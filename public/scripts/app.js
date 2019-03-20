@@ -48,11 +48,7 @@ const data = [
 $(document).ready(function(){
   function renderTweets(data) {
     for (let tweet of data){
-      console.log(tweet)
       let $tweet = createTweetElement(tweet);
-      console.log("Tweets feed before new tweet", $('#tweets-feed'))
-      console.log("tweet object", $tweet);
-      console.log($('Tweets feed after new tweet', '#tweets-feed'))
       $tweet.prependTo($('#tweets-feed'));
     }
   }
@@ -74,5 +70,21 @@ $(document).ready(function(){
     return $article;
   }
 
-  renderTweets(data);
+  
+  $('#tweet-form').submit(function(event) {
+    event.preventDefault();
+    console.log("default prevented");  
+    const $serializedTweet = $(this).serialize();
+    console.log($serializedTweet)
+
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: $serializedTweet
+    })
+  })
+
+  loadTweets(){
+    
+  }
 });

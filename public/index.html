@@ -36,7 +36,7 @@
       <section class='new-tweet'>
           <h2>Compose Tweet</h2>
           <!--We will remove this and make it a single page app by using prevent deafaul on the form-->
-          <form method='POST' action='/tweets/'>
+          <form id='tweet-form' action='/tweets' method='POST'>
             <textarea class='tweet-form' name='text' placeholder='What are you humming about?'></textarea>
             <input type='submit' value='Tweet'>
             <span class='counter'>140</span>
