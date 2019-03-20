@@ -1,13 +1,11 @@
 .container {
-  box-sizing: border-box;
   background: #20382b;
   display: block;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed';
   font-size: 100%;
-  margin-left: 25%;
-  margin-right: 25%;
   border-radius: 10px;
   border:2px solid;
+  margin-bottom: 10px;
 }
 
 .new-tweet h2{
@@ -34,16 +32,25 @@
   color: red;
 }
 
+#tweets-feed article.tweet {
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border:2px solid;
+}
+
 #tweets-feed header{
   background:#1e5c3a;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
   height:95px;
 }
 
 #tweets-feed .avatar{
   float: left;
-  width: 60px;
-  height: 60px;
-  margin: 15px;
+  width: 90px;
+  height: 90px;
+  margin: 3px;
   border-radius: 10px;
   border:2px solid;
 }
@@ -51,4 +58,9 @@
 #tweets-feed h2 {
   margin-top: 0px;
   padding-top: 25px;
+  display: inline-block;
+}
+
+#tweets-feed h6 {
+  float: right;
 }
