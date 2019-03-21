@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+// functions pertaining to building and viewing tweets
   function renderTweets(data) {
     for (let tweet of data){
       let $tweet = createTweetElement(tweet);
@@ -22,15 +24,12 @@ $(document).ready(function(){
             .append($footer));
     return $article;
   }
-
-
   
-  $('#tweet-form').submit(function(event) {
+ $('#tweet-form').submit(function(event) {
     event.preventDefault();
     console.log("default prevented");  
     const $serializedTweet = $(this).serialize();
     const length = $(this)[0][0].value.length;
-  
     if(length === 0){
       alert("Please be a bit more verbose!")
     } else {
@@ -39,18 +38,38 @@ $(document).ready(function(){
         method: 'POST',
         url: '/tweets',
         data: $serializedTweet,
-        })
+        success: function() {
+          postTweets();
+        }})
       } else {
       alert("Please be less verbose!")
       }
     }
-  })
+  });
 
   function loadTweets(){
     $.get('/tweets', function(data){
-      console.log(data)
       renderTweets(data);
     })
   }
   loadTweets();
+  
+  function postTweets () {
+    $.ajax('/tweets', {
+    method: 'GET',
+    success: function(data) {
+      renderTweets(data);
+    }
+    })
+  };
+
+  // Functions relating to CSS/ JQuery Animations
+  $('#compose').click(function() {
+    if( $('.container').is(':hidden')){
+      $('.container').slideDown("slow")
+    } else {
+      $('.container').hide();
+    }
+  });
+
 });
