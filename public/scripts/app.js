@@ -37,17 +37,17 @@ $(document).ready(function(){
 
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
-    console.log("default prevented");  
+    console.log('default prevented');  
     const $serializedTweet = $(this).serialize();
     const length = $(this)[0][0].value.length;
 
     let flag = true;
     //validations start here
     if(length === 0){
-      alert("Please be a bit more verbose!")
+      $('.validationError').text('Get loqacious!').delay(3000).slideUp(500);
       flag = false;
     } else if (length > 140){
-       alert("Please be a bit less verbose!");
+      $('.validationError').text('Try being less verbose!').delay(3000).slideUp(500);
        flag = false;
     }
 
@@ -57,11 +57,10 @@ $(document).ready(function(){
         url: '/tweets',
         data: $serializedTweet,
         success: function(result) {
-          console.log("tweet was posted successfully");
           loadTweets();
         },
         error: function(err){
-          console.log("there was an error posting the tweet");
+          console.log('there was an error posting the tweet');
         }
       })
     }
@@ -71,7 +70,7 @@ $(document).ready(function(){
   // Functions relating to CSS/ JQuery Animations
   $('#compose').click(function() {
     if( $('.container').is(':hidden')){
-      $('.container').slideDown("slow");
+      $('.container').slideDown('slow');
       $('textarea').focus();
     } else {
       $('.container').hide();

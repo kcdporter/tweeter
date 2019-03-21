@@ -31,3 +31,8 @@
 .limit-reached {
   color: red;
 }
+
+.validationError {
+  color:red;
+  font-weight: 700;
+}
