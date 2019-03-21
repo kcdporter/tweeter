@@ -37,7 +37,6 @@ $(document).ready(function(){
 
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
-    console.log('default prevented');  
     const $serializedTweet = $(this).serialize();
     const length = $(this)[0][0].value.length;
 
