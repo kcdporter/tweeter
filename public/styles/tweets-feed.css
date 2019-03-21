@@ -1,10 +1,12 @@
 #tweets-feed article.tweet {
+  overflow-wrap: break-word;
   opacity: .2;
   width: 450px;
   margin: 0 auto;
   border-radius: 10px;
   border:2px solid;
 }
+
 #tweets-feed article.tweet:hover {
   opacity: 1;
 }
