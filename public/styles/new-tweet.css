@@ -6,6 +6,7 @@
   border-radius: 10px;
   border:2px solid;
   margin-bottom: 10px;
+  max-width: 450px;
 }
 
 .new-tweet h2{
