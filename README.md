@@ -20,3 +20,12 @@ This repository is the starter code for the project: Students will fork and clon
 - chance
 - express
 - mongodb
+
+## Final Result
+_____________________
+
+!["Screenshot of Tweeter Homepage"](https://github.com/kcdporter/tweeter/blob/master/public/images/TweetsFeed.png)
+!["Screenshot of drop-down tweet submission form"](https://github.com/kcdporter/tweeter/blob/master/public/images/DropDownTweetForm.png)
+!["Screenshot of 0 characters or only spaces error"](https://github.com/kcdporter/tweeter/blob/master/public/images/ErrorEmptySubmission.png)
+!["Screenshot of 0 characters or only spaces error"](https://github.com/kcdporter/tweeter/blob/master/public/images/CharacterCounterBeyondLimit.png)
+----------------------
