@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 // functions pertaining to building and viewing tweets
-  //This function we need to invoke immediately once our page gets loaded.
   loadTweets();
 
   function createTweetElement(tweet) {
@@ -12,8 +11,8 @@ $(document).ready(function(){
     );
     let $body = ($('<p>').text(tweet.content.text));
     let $footer = ($('<footer>')
-    .append($('<div>').text(tweet.created_at))
-    .append($('<div>').addClass('icons').text('🇨🇦 ❤️ ↻')));
+    .append($('<div>').addClass('postDate').text(sincePosted(tweet.created_at))
+    .append($('<div>').addClass('icons').text('🇨🇦 ❤️ ↻'))));
     let $article = ($('<article>').addClass('tweet')
     .append($header)
     .append($body)
@@ -41,12 +40,12 @@ $(document).ready(function(){
     const length = $(this)[0][0].value.length;
 
     let flag = true;
-    //validations start here
+  //validations start here
     if(length === 0){
-      $('.validationError').text('Get loqacious!').delay(3000).slideUp(500);
+      $('.validationError').text('Get loqacious!').show().delay(3000).slideUp(500);
       flag = false;
     } else if (length > 140){
-      $('.validationError').text('Try being less verbose!').delay(3000).slideUp(500);
+      $('.validationError').text('Try being less verbose!').show().delay(3000).slideUp(500);
        flag = false;
     }
 
@@ -57,6 +56,7 @@ $(document).ready(function(){
         data: $serializedTweet,
         success: function(result) {
           loadTweets();
+          $('#tweets-feed').empty();
         },
         error: function(err){
           console.log('there was an error posting the tweet');
@@ -65,8 +65,8 @@ $(document).ready(function(){
     }
   });
   
-
   // Functions relating to CSS/ JQuery Animations
+  //hides new tweets form
   $('#compose').click(function() {
     if( $('.container').is(':hidden')){
       $('.container').slideDown('slow');
@@ -75,5 +75,26 @@ $(document).ready(function(){
       $('.container').hide();
     }
   });
+  //converts number to readable time stamp
+  let sincePosted = function(date) {
+    let msDiff = Date.now() - date;
+    let days = Math.floor(msDiff / 86400000);
+    if (days === 0) {
+      let hours = Math.floor(msDiff / 3600000);
+      if (hours === 0) {
+        let minutes = Math.floor(msDiff / 60000);
+        if (minutes <= 1) {
+          return `Just Posted`;
+        } else {
+          return `${minutes} minutes ago`;
+        }
+      } else {
+        return `${hours} hours ago`;
+      }
+    } else {
+      return `${days} days ago`;
+    }
+  };
+
 
 });
