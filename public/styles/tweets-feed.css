@@ -13,29 +13,31 @@
 
 #tweets-feed header{
   background:#1e5c3a;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
-  height:95px;
+  height: 95px;
 }
 
 #tweets-feed .avatar{
-  float: left;
   width: 90px;
   height: 90px;
   margin: 3px;
   border-radius: 10px;
-  border:2px solid;
+  border: 2px solid;
 }
 
 #tweets-feed h2 {
-  margin-top: 0px;
-  padding-top: 25px;
-  display: inline-block;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-left: 3px;
+  flex-wrap: wrap;
 }
 
 #tweets-feed h6 {
-  float: right;
   padding-right: 5px;
+  flex-wrap: wrap;
 }
 
 #tweets-feed p{

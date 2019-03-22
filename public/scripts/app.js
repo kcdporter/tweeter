@@ -41,7 +41,7 @@ $(document).ready(function(){
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
     const $serializedTweet = $(this).serialize();
-    const length = $(this)[0][0].value.length;
+    const length = $(this)[0][0].value.trim().length;
 
     let flag = true;
   //validations start here
