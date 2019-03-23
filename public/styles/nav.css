@@ -1,27 +1,28 @@
 #nav-bar {
   z-index: 100;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 80px;
   width: 100%;
-  padding:0px 32px;
+  padding: 0px 32px;
   background: no-repeat url("/images/fern.jpg");
   position: fixed;
   top: 0;
 }
 
-#nav-bar .logo{
+#nav-bar .logo {
   height: 80px;
   width: 80px;
   float: left;
 }
 
-#nav-bar .header{
+#nav-bar .header {
   float: left;
   padding: 3px 10px 0px 0px;
   font: 250% font-size;
 }
 
-#nav-bar .button{
+#nav-bar .button {
   opacity: .8;
   float: right;
   background-color: #006038;
@@ -35,6 +36,7 @@
   cursor: pointer;
 }
 
-#nav-bar .button:hover{
+#nav-bar .button:hover {
   opacity: 1;
 }
+/*# sourceMappingURL=nav.css.map */

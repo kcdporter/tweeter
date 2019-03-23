@@ -1,0 +1,25 @@
+$margin: 0 auto;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  margin: $margin;
+  color: #eee;
+  background-color: #13211b;
+  font-size: 24px;
+
+  .container {
+    width:450px;
+    margin: $margin;
+    margin-top:140px;
+    padding:2em;
+  }
+}
+

@@ -1,0 +1,40 @@
+#nav-bar {
+  z-index: 100;
+  box-sizing: border-box;
+  height: 80px;
+  width: 100%;
+  padding:0px 32px;
+  background: no-repeat url("/images/fern.jpg");
+  position: fixed;
+  top: 0;
+
+  .logo{
+    height: 80px;
+    width: 80px;
+    float: left;
+  }
+
+  .header{
+    float: left;
+    padding: 3px 10px 0px 0px;
+    font: 250% font-size;
+  }
+
+  .button{
+    opacity: .8;
+    float: right;
+    background-color: #006038;
+    border-radius: 10px;
+    border-top: 1px solid #feffff;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+    opacity: 1;
+  }
+}

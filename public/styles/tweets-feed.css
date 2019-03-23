@@ -4,23 +4,23 @@
   max-width: 450px;
   margin: 0 auto;
   border-radius: 10px;
-  border:2px solid;
+  border: 2px solid;
 }
 
-#tweets-feed article.tweet:hover {
-  opacity: 1;
-}
-
-#tweets-feed header{
-  background:#1e5c3a;
+#tweets-feed article.tweet header {
+  background: #1e5c3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   height: 95px;
 }
 
-#tweets-feed .avatar{
+#tweets-feed article.tweet header .avatar {
   width: 90px;
   height: 90px;
   margin: 3px;
@@ -28,45 +28,61 @@
   border: 2px solid;
 }
 
-#tweets-feed h2 {
-  flex-grow: 1;
+#tweets-feed article.tweet header h2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-top: auto;
   margin-left: 3px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#tweets-feed h6 {
+#tweets-feed article.tweet header h6 {
   padding-right: 5px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#tweets-feed p{
+#tweets-feed article.tweet p {
   padding-left: 5px;
   padding-right: 5px;
   text-align: justify;
   text-justify: inter-word;
 }
 
-#tweets-feed footer{
+#tweets-feed article.tweet footer {
   border-top: 1px solid #feffff;
   padding-right: 5px;
 }
 
-#tweets-feed footer .postDate{
+#tweets-feed article.tweet footer .postDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 5px;
-
 }
 
-#tweets-feed footer div.icons{
+#tweets-feed article.tweet footer div.icons {
   width: auto;
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 5px;
 }
 
-#tweets-feed article.tweet:hover div.icons{
+#tweets-feed article.tweet:hover {
   opacity: 1;
 }
+
+#tweets-feed article.tweet:hover div.icons {
+  opacity: 1;
+}
+/*# sourceMappingURL=tweets-feed.css.map */
